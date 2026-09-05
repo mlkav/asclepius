@@ -1,0 +1,6 @@
+{
+ "backend-service-url": "https://backend-api-491995768296.asia-southeast2.run.app",
+ "frontend-service-url": "https://submissionmlgc-rnlkav.et.r.appspot.com/",
+ "project-id": "submissionmlgc-rnlkav",
+ "bucket-name": "submissionmlgc-models"
+}

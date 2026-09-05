@@ -1,0 +1,20 @@
+runtime: nodejs22
+instance_class: F1
+
+handlers:
+  # Melayani semua berkas statis di dalam folder src (images, scripts, styles)
+  - url: /src
+    static_dir: src
+
+  # Melayani favicon
+  - url: /favicon.png
+    static_files: favicon.png
+    upload: favicon.png
+
+  # Melayani halaman utama index.html untuk semua request lainnya
+  - url: /.*
+    static_files: index.html
+    upload: index.html
+
+automatic_scaling:
+  max_instances: 1
